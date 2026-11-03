@@ -1,0 +1,2 @@
+[console_scripts]
+nb = newsletter_brief.cli:main

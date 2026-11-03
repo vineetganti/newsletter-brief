@@ -27,3 +27,11 @@ def test_non_content_links_dropped():
 
 def test_real_article_kept():
     assert is_content_link("https://blog.dev/agents-in-prod", "How we run agents in prod")
+
+
+def test_newsletter_boilerplate_dropped_but_similar_real_links_kept():
+    assert not is_content_link("https://tldr.tech/data", "Sign Up")
+    assert not is_content_link("https://tldr.tech/manage?x=1", "Manage your subscriptions")
+    assert not is_content_link("https://advertise.tldr.tech/x", "anything")
+    assert not is_content_link("https://jobs.ashbyhq.com/tldr/abc", "Apply here")
+    assert is_content_link("https://blog.dev/api-beta", "Sign up for our API beta results")

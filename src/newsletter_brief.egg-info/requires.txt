@@ -1,0 +1,14 @@
+google-api-python-client
+google-auth-oauthlib
+beautifulsoup4
+trafilatura
+httpx
+pydantic>=2
+chromadb
+gradio
+notion-client
+python-dotenv
+
+[dev]
+pytest
+ruff

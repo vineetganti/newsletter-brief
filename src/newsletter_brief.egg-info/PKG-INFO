@@ -1,0 +1,18 @@
+Metadata-Version: 2.4
+Name: newsletter-brief
+Version: 0.1.0
+Summary: Daily newsletter brief -> approval -> Notion second brain
+Requires-Python: >=3.11
+Requires-Dist: google-api-python-client
+Requires-Dist: google-auth-oauthlib
+Requires-Dist: beautifulsoup4
+Requires-Dist: trafilatura
+Requires-Dist: httpx
+Requires-Dist: pydantic>=2
+Requires-Dist: chromadb
+Requires-Dist: gradio
+Requires-Dist: notion-client
+Requires-Dist: python-dotenv
+Provides-Extra: dev
+Requires-Dist: pytest; extra == "dev"
+Requires-Dist: ruff; extra == "dev"
